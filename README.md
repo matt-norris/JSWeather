@@ -1,6 +1,4 @@
 # JSWeather
-Sure, here's a sample README file for your weather app:
-
 JSWeather
 
 This weather app is a user-friendly web application that fetches and displays current weather data using the OpenWeatherMap API. It allows users to search for weather conditions by city name and presents the temperature, weather icon, description, humidity, wind speed, and precipitation in a visually appealing interface.
