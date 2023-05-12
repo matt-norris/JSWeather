@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="container">
-        <div class="search-box">
-            <input type="text" id="search-input" placeholder="Enter city name...">
-            <button id="search-btn">Search</button>
+<body class="bg-blue-50 min-h-screen flex items-center justify-center">
+    <div class="container mx-auto px-4">
+        <div class="search-box flex items-center justify-center mb-8">
+            <input type="text" id="search-input" placeholder="Enter city name..." class="mr-2 px-3 py-2 border border-gray-300 rounded-md">
+            <button id="search-btn" class="px-4 py-2 bg-blue-600 text-white rounded-md">Search</button>
         </div>
-        <div class="weather-info">
-            <div class="location"></div>
-            <div class="temperature"></div>
-            <div class="icon"></div>
-            <div class="description"></div>
-            <div class="details">
+   
+        <div class="weather-info bg-white shadow-lg rounded-lg p-6">
+            <div class="location text-2xl font-bold mb-2"></div>
+            <div class="temperature text-xl mb-2"></div>
+            <div class="icon mb-2"></div>
+            <div class="description text-gray-600 mb-2"></div>
+            <div class="details grid grid-cols-3 gap-4 mb-4">
                 <div class="humidity"></div>
                 <div class="wind-speed"></div>
                 <div class="precipitation"></div>
