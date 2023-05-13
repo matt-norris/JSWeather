@@ -5,8 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @keyframes gradientBg {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        body {
+            background: linear-gradient(270deg, #1c92d2, #f2c94c, #e91e63, #9b26af);
+            background-size: 800% 800%;
+            animation: gradientBg 60s ease infinite;
+        }
+    </style>
 </head>
-<body class="bg-blue-50 min-h-screen flex items-center justify-center">
+<body class="gradient-background min-h-screen flex items-center justify-center">
+
     <div class="container mx-auto px-4">
         <div class="search-box flex items-center justify-center mb-8">
             <input type="text" id="search-input" placeholder="Enter city name..." class="mr-2 px-3 py-2 border border-gray-300 rounded-md">
